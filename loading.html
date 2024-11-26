@@ -52,10 +52,10 @@
     const progressBar = document.getElementById('progress-bar');
     const message = document.getElementById('message');
     const serviceUrl = 'https://cv-web-app-800953825983.us-central1.run.app'; // Replace with your Cloud Run URL
-    const maxRetries = 20; // Retry for ~60 seconds (20 retries * 3 seconds)
+    const maxRetries = 15; // Retry for ~45 seconds (15 retries * 3 seconds)
     let retries = 0;
     let progress = 0;
-    const totalDuration = 50000; // 50 seconds in milliseconds
+    const totalDuration = 30000; // 30 seconds in milliseconds
     const updateInterval = 100; // Progress update interval in milliseconds
 
     function updateProgress() {
